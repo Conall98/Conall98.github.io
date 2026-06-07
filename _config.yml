@@ -1,0 +1,24 @@
+title: Conall de Paor
+description: Writer | Aerospace Engineer
+author: Conall de Paor
+email: hello@conalldepaor.com
+url: "https://conalldepaor.com"
+
+# Banner image used behind the hero. Replace with your own image when ready.
+hero_banner: "https://images.unsplash.com/photo-1457364887197-9150188c107b?auto=format&fit=crop&w=2000&q=80"
+
+# Social links shown in the footer
+github_url: "https://github.com/Conall98"
+linkedin_url: "https://linkedin.com"
+
+# Jekyll build settings
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+# Files to exclude from the built site
+exclude:
+  - INSTRUCTIONS.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
