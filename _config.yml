@@ -15,6 +15,20 @@ linkedin_url: "https://linkedin.com"
 markdown: kramdown
 permalink: /:year/:month/:day/:title/
 
+# Projects collection — drop a markdown file into _projects/ and it shows up
+# as a card on the homepage with its own detail page at /projects/slug/
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+
 # Files to exclude from the built site
 exclude:
   - INSTRUCTIONS.md
@@ -22,3 +36,5 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - _projects/README.md
+  - assets/img/README.md

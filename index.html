@@ -28,50 +28,17 @@ layout: default
   </div>
 
   <div class="projects-grid">
-
-    <a class="project-card reveal" href="#">
-      <p class="project-tag">Aerodynamics</p>
-      <h3 class="project-name">Low-Reynolds Wing Profile Analysis</h3>
+    {% assign sorted_projects = site.projects | sort: 'order' %}
+    {% for project in sorted_projects %}
+    <a class="project-card reveal" href="{{ project.url | relative_url }}">
+      <p class="project-tag">{{ project.tag }}</p>
+      <h3 class="project-name">{{ project.title }}</h3>
       <p class="project-desc">
-        CFD study of laminar separation bubbles on thin aerofoils at
-        Reynolds numbers below 100,000 — relevant to UAV and high-altitude
-        platforms.
+        {{ project.description }}
       </p>
       <span class="project-link">View project</span>
     </a>
-
-    <a class="project-card reveal" href="#">
-      <p class="project-tag">Propulsion</p>
-      <h3 class="project-name">Hybrid Rocket Motor Test Rig</h3>
-      <p class="project-desc">
-        Design and fabrication of a small-scale hybrid motor using
-        nitrous oxide and HTPB, with full instrumentation for thrust
-        and chamber pressure logging.
-      </p>
-      <span class="project-link">View project</span>
-    </a>
-
-    <a class="project-card reveal" href="#">
-      <p class="project-tag">Structures</p>
-      <h3 class="project-name">Composite Fuselage Lay-up Optimisation</h3>
-      <p class="project-desc">
-        FEA-driven ply schedule optimisation for a CFRP fuselage section,
-        minimising mass while meeting buckling and fatigue requirements.
-      </p>
-      <span class="project-link">View project</span>
-    </a>
-
-    <a class="project-card reveal" href="#">
-      <p class="project-tag">GNC</p>
-      <h3 class="project-name">6-DoF Flight Simulation Framework</h3>
-      <p class="project-desc">
-        Python-based rigid-body flight simulator with atmospheric modelling,
-        actuator dynamics, and a pluggable guidance and control layer for
-        rapid algorithm prototyping.
-      </p>
-      <span class="project-link">View project</span>
-    </a>
-
+    {% endfor %}
   </div>
 </section>
 
