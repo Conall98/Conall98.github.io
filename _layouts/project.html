@@ -5,8 +5,12 @@ layout: default
   <a class="post-back" href="{{ '/#projects' | relative_url }}">← Back to Projects</a>
   {% if page.tag %}<p class="post-date">{{ page.tag }}</p>{% endif %}
   <h1 class="post-title">{{ page.title }}</h1>
-  {% if page.image %}
-  <div class="post-image" style="background-image: url('{{ page.image }}');"></div>
+  {% if page.video %}
+  <video class="post-video" autoplay loop muted playsinline {% if page.image %}poster="{{ page.image | relative_url }}"{% endif %}>
+    <source src="{{ page.video | relative_url }}" type="video/mp4">
+  </video>
+  {% elsif page.image %}
+  <div class="post-image" style="background-image: url('{{ page.image | relative_url }}');"></div>
   {% endif %}
   <div class="post-content">
     {{ content }}

@@ -364,6 +364,14 @@ nav {
   margin-bottom: 3rem;
 }
 
+.post-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  background-color: var(--card-bg);
+  margin-bottom: 3rem;
+}
+
 .post-content {
   font-size: 1.08rem;
   line-height: 1.85;

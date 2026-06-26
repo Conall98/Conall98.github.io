@@ -3,7 +3,8 @@ title: "Lunar Lander Flight Simulator"
 tag: "Simulation"
 order: 4
 description: "A Python-based six-degree-of-freedom terminal descent and landing simulator for lunar landers, driven by real LRO digital elevation maps and used to simulate landing on the rim of Shackleton crater."
-image: "/assets/img/hakuto_lander.gif"
+video: "/assets/img/hakuto_lander.mp4"
+image: "/assets/img/hakuto_lander_poster.jpg"
 ---
 
 A Python-based six-degree-of-freedom (6-DoF) terminal descent and landing simulator for lunar landers.
