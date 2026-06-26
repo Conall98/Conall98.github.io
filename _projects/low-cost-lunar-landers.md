@@ -3,7 +3,7 @@ title: "How Cheaply Can Cargo Be Delivered to the Moon?"
 tag: "Journal Paper"
 order: 1
 description: "A probabilistic cost-and-mass study of ten lunar mission architectures, asking how low the per-kilogram cost of delivering cargo to the lunar surface can realistically be pushed, and what it would take to get there."
-image: ""
+image: "/assets/img/orla_lander.jpg"
 ---
 
 
